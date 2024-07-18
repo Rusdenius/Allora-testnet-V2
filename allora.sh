@@ -259,7 +259,7 @@ services:
         allora-node --role=worker --peer-db=/data/peerdb --function-db=/data/function-db \
           --runtime-path=/app/runtime --runtime-cli=bls-runtime --workspace=/data/workspace \
           --private-key=/data/keys/priv.bin --log-level=debug --port=9011 \
-          --boot-nodes=/dns4/heads.testnet.allora.network/tcp/9527/p2p/$head_id \
+          --boot-nodes/ip4/172.22.0.100/tcp/9010/p2p/$HEAD_ID \
           --topic=allora-topic-1-worker \
           --allora-chain-key-name=testkey \
           --allora-chain-restore-mnemonic='$seed_phrase' \
